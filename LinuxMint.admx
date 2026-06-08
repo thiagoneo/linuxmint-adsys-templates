@@ -320,25 +320,25 @@
     <policy name="CinnamonUserDconfOrgCinnamonEnabledApplets" class="User" displayName="$(string.CinnamonDisplayUserAllDconfOrgCinnamonEnabledApplets)" explainText="$(string.CinnamonExplainTextUserDconfOrgCinnamonEnabledApplets)" presentation="$(presentation.CinnamonPresentationUserDconfOrgCinnamonEnabledApplets)" key="Software\Policies\Ubuntu\dconf\org\cinnamon\enabled-applets" valueName="metaValues">
       <parentCategory ref="CinnamonPanel" />
       <supportedOn ref="Ubuntu" />
-      <enabledValue><string>{"20.04":{"empty":"''","meta":"s"},"22.04":{"empty":"''","meta":"s"},"24.04":{"empty":"''","meta":"s"},"all":{"empty":"''","meta":"s"}}</string></enabledValue>
-      <disabledValue><string>{"20.04":{"meta":"s"},"22.04":{"meta":"s"},"24.04":{"meta":"s"},"all":{"meta":"s"}}</string></disabledValue>
+      <enabledValue><string>{"20.04":{"empty":"[]","meta":"as"},"22.04":{"empty":"[]","meta":"as"},"24.04":{"empty":"[]","meta":"as"},"all":{"empty":"[]","meta":"as"}}</string></enabledValue>
+      <disabledValue><string>{"20.04":{"meta":"as"},"22.04":{"meta":"as"},"24.04":{"meta":"as"},"all":{"meta":"as"}}</string></disabledValue>
       <elements>
-        <text id="CinnamonElemUserAllDconfOrgCinnamonEnabledApplets" valueName="all" />
+        <multiText id="CinnamonElemUserAllDconfOrgCinnamonEnabledApplets" valueName="all" />
         <boolean id="CinnamonOverrideElemUser2404DconfOrgCinnamonEnabledApplets" valueName="Override24.04">
           <trueValue><string>true</string></trueValue>
           <falseValue><string>false</string></falseValue>
         </boolean>
-        <text id="CinnamonElemUser2404DconfOrgCinnamonEnabledApplets" valueName="24.04" />
+        <multiText id="CinnamonElemUser2404DconfOrgCinnamonEnabledApplets" valueName="24.04" />
         <boolean id="CinnamonOverrideElemUser2204DconfOrgCinnamonEnabledApplets" valueName="Override22.04">
           <trueValue><string>true</string></trueValue>
           <falseValue><string>false</string></falseValue>
         </boolean>
-        <text id="CinnamonElemUser2204DconfOrgCinnamonEnabledApplets" valueName="22.04" />
+        <multiText id="CinnamonElemUser2204DconfOrgCinnamonEnabledApplets" valueName="22.04" />
         <boolean id="CinnamonOverrideElemUser2004DconfOrgCinnamonEnabledApplets" valueName="Override20.04">
           <trueValue><string>true</string></trueValue>
           <falseValue><string>false</string></falseValue>
         </boolean>
-        <text id="CinnamonElemUser2004DconfOrgCinnamonEnabledApplets" valueName="20.04" />
+        <multiText id="CinnamonElemUser2004DconfOrgCinnamonEnabledApplets" valueName="20.04" />
       </elements>
     </policy>
 
