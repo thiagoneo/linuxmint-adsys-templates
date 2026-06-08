@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<policyDefinitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <policyNamespaces>
+    <target prefix="linuxmint" namespace="LinuxMint.Policies.LinuxMint" />
+    <using prefix="ubuntu" namespace="Canonical.Policies.Ubuntu" />
+  </policyNamespaces>
+  <resources minRequiredRevision="1.0" />
+
+  <categories>
+    <category name="LinuxMint" displayName="$(string.LinuxMintDisplayRoot)">
+      <parentCategory ref="ubuntu:Desktop" />
+    </category>
+    <category name="CinnamonRoot" displayName="$(string.CinnamonDisplayRoot)">
+      <parentCategory ref="LinuxMint" />
+    </category>
+    <category name="CinnamonDesktop" displayName="$(string.CinnamonDisplayDesktop)">
+      <parentCategory ref="CinnamonRoot" />
+    </category>
+    <category name="CinnamonBackground" displayName="$(string.CinnamonDisplayBackground)">
+      <parentCategory ref="CinnamonDesktop" />
+    </category>
+    <category name="CinnamonPanel" displayName="$(string.CinnamonDisplayPanel)">
+      <parentCategory ref="CinnamonRoot" />
+    </category>
+    <category name="CinnamonSession" displayName="$(string.CinnamonDisplaySession)">
+      <parentCategory ref="CinnamonRoot" />
+    </category>
+    <category name="CinnamonMedia" displayName="$(string.CinnamonDisplayMedia)">
+      <parentCategory ref="CinnamonRoot" />
+    </category>
+    <category name="CinnamonPower" displayName="$(string.CinnamonDisplayPower)">
+      <parentCategory ref="CinnamonRoot" />
+    </category>
+  </categories>
+
+  <policies>
+    <policy name="CinnamonUserDconfOrgCinnamonCinnamonSessionQuitTimeDelay" class="User" displayName="$(string.CinnamonDisplayUserAllDconfOrgCinnamonCinnamonSessionQuitTimeDelay)" explainText="$(string.CinnamonExplainTextUserDconfOrgCinnamonCinnamonSessionQuitTimeDelay)" presentation="$(presentation.CinnamonPresentationUserDconfOrgCinnamonCinnamonSessionQuitTimeDelay)" key="Software\Policies\Ubuntu\dconf\org\cinnamon\cinnamon-session\quit-time-delay" valueName="metaValues">
+      <parentCategory ref="CinnamonSession" />
+      <supportedOn ref="Ubuntu" />
+      <enabledValue><string>{"20.04":{"empty":"0","meta":"i"},"22.04":{"empty":"0","meta":"i"},"24.04":{"empty":"0","meta":"i"},"all":{"empty":"0","meta":"i"}}</string></enabledValue>
+      <disabledValue><string>{"20.04":{"meta":"i"},"22.04":{"meta":"i"},"24.04":{"meta":"i"},"all":{"meta":"i"}}</string></disabledValue>
+      <elements>
+        <decimal id="CinnamonElemUserAllDconfOrgCinnamonCinnamonSessionQuitTimeDelay" valueName="all" />
+        <boolean id="CinnamonOverrideElemUser2404DconfOrgCinnamonCinnamonSessionQuitTimeDelay" valueName="Override24.04">
+          <trueValue><string>true</string></trueValue>
+          <falseValue><string>false</string></falseValue>
+        </boolean>
+        <decimal id="CinnamonElemUser2404DconfOrgCinnamonCinnamonSessionQuitTimeDelay" valueName="24.04" />
+        <boolean id="CinnamonOverrideElemUser2204DconfOrgCinnamonCinnamonSessionQuitTimeDelay" valueName="Override22.04">
+          <trueValue><string>true</string></trueValue>
+          <falseValue><string>false</string></falseValue>
+        </boolean>
+        <decimal id="CinnamonElemUser2204DconfOrgCinnamonCinnamonSessionQuitTimeDelay" valueName="22.04" />
+        <boolean id="CinnamonOverrideElemUser2004DconfOrgCinnamonCinnamonSessionQuitTimeDelay" valueName="Override20.04">
+          <trueValue><string>true</string></trueValue>
+          <falseValue><string>false</string></falseValue>
+        </boolean>
+        <decimal id="CinnamonElemUser2004DconfOrgCinnamonCinnamonSessionQuitTimeDelay" valueName="20.04" />
+      </elements>
+    </policy>
+
+    <policy name="CinnamonUserDconfOrgCinnamonCinnamonSessionQuitDelayToggle" class="User" displayName="$(string.CinnamonDisplayUserAllDconfOrgCinnamonCinnamonSessionQuitDelayToggle)" explainText="$(string.CinnamonExplainTextUserDconfOrgCinnamonCinnamonSessionQuitDelayToggle)" presentation="$(presentation.CinnamonPresentationUserDconfOrgCinnamonCinnamonSessionQuitDelayToggle)" key="Software\Policies\Ubuntu\dconf\org\cinnamon\cinnamon-session\quit-delay-toggle" valueName="metaValues">
+      <parentCategory ref="CinnamonSession" />
+      <supportedOn ref="Ubuntu" />
+      <enabledValue><string>{"20.04":{"empty":"false","meta":"b"},"22.04":{"empty":"false","meta":"b"},"24.04":{"empty":"false","meta":"b"},"all":{"empty":"false","meta":"b"}}</string></enabledValue>
+      <disabledValue><string>{"20.04":{"meta":"b"},"22.04":{"meta":"b"},"24.04":{"meta":"b"},"all":{"meta":"b"}}</string></disabledValue>
+      <elements>
+        <boolean id="CinnamonElemUserAllDconfOrgCinnamonCinnamonSessionQuitDelayToggle" valueName="all">
+          <trueValue><string>true</string></trueValue>
+          <falseValue><string>false</string></falseValue>
+        </boolean>
+        <boolean id="CinnamonOverrideElemUser2404DconfOrgCinnamonCinnamonSessionQuitDelayToggle" valueName="Override24.04">
+          <trueValue><string>true</string></trueValue>
+          <falseValue><string>false</string></falseValue>
+        </boolean>
+        <boolean id="CinnamonElemUser2404DconfOrgCinnamonCinnamonSessionQuitDelayToggle" valueName="24.04">
+          <trueValue><string>true</string></trueValue>
+          <falseValue><string>false</string></falseValue>
+        </boolean>
+        <boolean id="CinnamonOverrideElemUser2204DconfOrgCinnamonCinnamonSessionQuitDelayToggle" valueName="Override22.04">
+          <trueValue><string>true</string></trueValue>
+          <falseValue><string>false</string></falseValue>
+        </boolean>
+        <boolean id="CinnamonElemUser2204DconfOrgCinnamonCinnamonSessionQuitDelayToggle" valueName="22.04">
+          <trueValue><string>true</string></trueValue>
+          <falseValue><string>false</string></falseValue>
+        </boolean>
+        <boolean id="CinnamonOverrideElemUser2004DconfOrgCinnamonCinnamonSessionQuitDelayToggle" valueName="Override20.04">
+          <trueValue><string>true</string></trueValue>
+          <falseValue><string>false</string></falseValue>
+        </boolean>
+        <boolean id="CinnamonElemUser2004DconfOrgCinnamonCinnamonSessionQuitDelayToggle" valueName="20.04">
+          <trueValue><string>true</string></trueValue>
+          <falseValue><string>false</string></falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="CinnamonUserDconfOrgCinnamonDesktopBackgroundPictureOptions" class="User" displayName="$(string.CinnamonDisplayUserAllDconfOrgCinnamonDesktopBackgroundPictureOptions)" explainText="$(string.CinnamonExplainTextUserDconfOrgCinnamonDesktopBackgroundPictureOptions)" presentation="$(presentation.CinnamonPresentationUserDconfOrgCinnamonDesktopBackgroundPictureOptions)" key="Software\Policies\Ubuntu\dconf\org\cinnamon\desktop\background\picture-options" valueName="metaValues">
+      <parentCategory ref="CinnamonBackground" />
+      <supportedOn ref="Ubuntu" />
+      <enabledValue><string>{"20.04":{"empty":"''","meta":"s"},"22.04":{"empty":"''","meta":"s"},"24.04":{"empty":"''","meta":"s"},"all":{"empty":"''","meta":"s"}}</string></enabledValue>
+      <disabledValue><string>{"20.04":{"meta":"s"},"22.04":{"meta":"s"},"24.04":{"meta":"s"},"all":{"meta":"s"}}</string></disabledValue>
+      <elements>
+        <enum id="CinnamonElemUserAllDconfOrgCinnamonDesktopBackgroundPictureOptions" valueName="all">
+          <item displayName="$(string.CinnamonItemUserAllDconfOrgCinnamonDesktopBackgroundPictureOptions0)">
+            <value>
+              <string>none</string>
+            </value>
+          </item>
+          <item displayName="$(string.CinnamonItemUserAllDconfOrgCinnamonDesktopBackgroundPictureOptions1)">
+            <value>
+              <string>wallpaper</string>
+            </value>
+          </item>
+          <item displayName="$(string.CinnamonItemUserAllDconfOrgCinnamonDesktopBackgroundPictureOptions2)">
+            <value>
+              <string>centered</string>
+            </value>
+          </item>
+          <item displayName="$(string.CinnamonItemUserAllDconfOrgCinnamonDesktopBackgroundPictureOptions3)">
+            <value>
+              <string>scaled</string>
+            </value>
+          </item>
+          <item displayName="$(string.CinnamonItemUserAllDconfOrgCinnamonDesktopBackgroundPictureOptions4)">
+            <value>
+              <string>stretched</string>
+            </value>
+          </item>
+          <item displayName="$(string.CinnamonItemUserAllDconfOrgCinnamonDesktopBackgroundPictureOptions5)">
+            <value>
+              <string>zoom</string>
+            </value>
+          </item>
+          <item displayName="$(string.CinnamonItemUserAllDconfOrgCinnamonDesktopBackgroundPictureOptions6)">
+            <value>
+              <string>spanned</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="CinnamonOverrideElemUser2404DconfOrgCinnamonDesktopBackgroundPictureOptions" valueName="Override24.04">
+          <trueValue><string>true</string></trueValue>
+          <falseValue><string>false</string></falseValue>
+        </boolean>
+        <enum id="CinnamonElemUser2404DconfOrgCinnamonDesktopBackgroundPictureOptions" valueName="24.04">
+          <item displayName="$(string.CinnamonItemUser2404DconfOrgCinnamonDesktopBackgroundPictureOptions0)">
+            <value>
+              <string>none</string>
+            </value>
+          </item>
+          <item displayName="$(string.CinnamonItemUser2404DconfOrgCinnamonDesktopBackgroundPictureOptions1)">
+            <value>
+              <string>wallpaper</string>
+            </value>
+          </item>
+          <item displayName="$(string.CinnamonItemUser2404DconfOrgCinnamonDesktopBackgroundPictureOptions2)">
+            <value>
+              <string>centered</string>
+            </value>
+          </item>
+          <item displayName="$(string.CinnamonItemUser2404DconfOrgCinnamonDesktopBackgroundPictureOptions3)">
+            <value>
+              <string>scaled</string>
+            </value>
+          </item>
+          <item displayName="$(string.CinnamonItemUser2404DconfOrgCinnamonDesktopBackgroundPictureOptions4)">
+            <value>
+              <string>stretched</string>
+            </value>
+          </item>
+          <item displayName="$(string.CinnamonItemUser2404DconfOrgCinnamonDesktopBackgroundPictureOptions5)">
+            <value>
+              <string>zoom</string>
+            </value>
+          </item>
+          <item displayName="$(string.CinnamonItemUser2404DconfOrgCinnamonDesktopBackgroundPictureOptions6)">
+            <value>
+              <string>spanned</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="CinnamonOverrideElemUser2204DconfOrgCinnamonDesktopBackgroundPictureOptions" valueName="Override22.04">
+          <trueValue><string>true</string></trueValue>
+          <falseValue><string>false</string></falseValue>
+        </boolean>
+        <enum id="CinnamonElemUser2204DconfOrgCinnamonDesktopBackgroundPictureOptions" valueName="22.04">
+          <item displayName="$(string.CinnamonItemUser2204DconfOrgCinnamonDesktopBackgroundPictureOptions0)">
+            <value>
+              <string>none</string>
+            </value>
+          </item>
+          <item displayName="$(string.CinnamonItemUser2204DconfOrgCinnamonDesktopBackgroundPictureOptions1)">
+            <value>
+              <string>wallpaper</string>
+            </value>
+          </item>
+          <item displayName="$(string.CinnamonItemUser2204DconfOrgCinnamonDesktopBackgroundPictureOptions2)">
+            <value>
+              <string>centered</string>
+            </value>
+          </item>
+          <item displayName="$(string.CinnamonItemUser2204DconfOrgCinnamonDesktopBackgroundPictureOptions3)">
+            <value>
+              <string>scaled</string>
+            </value>
+          </item>
+          <item displayName="$(string.CinnamonItemUser2204DconfOrgCinnamonDesktopBackgroundPictureOptions4)">
+            <value>
+              <string>stretched</string>
+            </value>
+          </item>
+          <item displayName="$(string.CinnamonItemUser2204DconfOrgCinnamonDesktopBackgroundPictureOptions5)">
+            <value>
+              <string>zoom</string>
+            </value>
+          </item>
+          <item displayName="$(string.CinnamonItemUser2204DconfOrgCinnamonDesktopBackgroundPictureOptions6)">
+            <value>
+              <string>spanned</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="CinnamonOverrideElemUser2004DconfOrgCinnamonDesktopBackgroundPictureOptions" valueName="Override20.04">
+          <trueValue><string>true</string></trueValue>
+          <falseValue><string>false</string></falseValue>
+        </boolean>
+        <enum id="CinnamonElemUser2004DconfOrgCinnamonDesktopBackgroundPictureOptions" valueName="20.04">
+          <item displayName="$(string.CinnamonItemUser2004DconfOrgCinnamonDesktopBackgroundPictureOptions0)">
+            <value>
+              <string>none</string>
+            </value>
+          </item>
+          <item displayName="$(string.CinnamonItemUser2004DconfOrgCinnamonDesktopBackgroundPictureOptions1)">
+            <value>
+              <string>wallpaper</string>
+            </value>
+          </item>
+          <item displayName="$(string.CinnamonItemUser2004DconfOrgCinnamonDesktopBackgroundPictureOptions2)">
+            <value>
+              <string>centered</string>
+            </value>
+          </item>
+          <item displayName="$(string.CinnamonItemUser2004DconfOrgCinnamonDesktopBackgroundPictureOptions3)">
+            <value>
+              <string>scaled</string>
+            </value>
+          </item>
+          <item displayName="$(string.CinnamonItemUser2004DconfOrgCinnamonDesktopBackgroundPictureOptions4)">
+            <value>
+              <string>stretched</string>
+            </value>
+          </item>
+          <item displayName="$(string.CinnamonItemUser2004DconfOrgCinnamonDesktopBackgroundPictureOptions5)">
+            <value>
+              <string>zoom</string>
+            </value>
+          </item>
+          <item displayName="$(string.CinnamonItemUser2004DconfOrgCinnamonDesktopBackgroundPictureOptions6)">
+            <value>
+              <string>spanned</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+
+    <policy name="CinnamonUserDconfOrgCinnamonDesktopBackgroundPictureUri" class="User" displayName="$(string.CinnamonDisplayUserAllDconfOrgCinnamonDesktopBackgroundPictureUri)" explainText="$(string.CinnamonExplainTextUserDconfOrgCinnamonDesktopBackgroundPictureUri)" presentation="$(presentation.CinnamonPresentationUserDconfOrgCinnamonDesktopBackgroundPictureUri)" key="Software\Policies\Ubuntu\dconf\org\cinnamon\desktop\background\picture-uri" valueName="metaValues">
+      <parentCategory ref="CinnamonBackground" />
+      <supportedOn ref="Ubuntu" />
+      <enabledValue><string>{"20.04":{"empty":"''","meta":"s"},"22.04":{"empty":"''","meta":"s"},"24.04":{"empty":"''","meta":"s"},"all":{"empty":"''","meta":"s"}}</string></enabledValue>
+      <disabledValue><string>{"20.04":{"meta":"s"},"22.04":{"meta":"s"},"24.04":{"meta":"s"},"all":{"meta":"s"}}</string></disabledValue>
+      <elements>
+        <text id="CinnamonElemUserAllDconfOrgCinnamonDesktopBackgroundPictureUri" valueName="all" />
+        <boolean id="CinnamonOverrideElemUser2404DconfOrgCinnamonDesktopBackgroundPictureUri" valueName="Override24.04">
+          <trueValue><string>true</string></trueValue>
+          <falseValue><string>false</string></falseValue>
+        </boolean>
+        <text id="CinnamonElemUser2404DconfOrgCinnamonDesktopBackgroundPictureUri" valueName="24.04" />
+        <boolean id="CinnamonOverrideElemUser2204DconfOrgCinnamonDesktopBackgroundPictureUri" valueName="Override22.04">
+          <trueValue><string>true</string></trueValue>
+          <falseValue><string>false</string></falseValue>
+        </boolean>
+        <text id="CinnamonElemUser2204DconfOrgCinnamonDesktopBackgroundPictureUri" valueName="22.04" />
+        <boolean id="CinnamonOverrideElemUser2004DconfOrgCinnamonDesktopBackgroundPictureUri" valueName="Override20.04">
+          <trueValue><string>true</string></trueValue>
+          <falseValue><string>false</string></falseValue>
+        </boolean>
+        <text id="CinnamonElemUser2004DconfOrgCinnamonDesktopBackgroundPictureUri" valueName="20.04" />
+      </elements>
+    </policy>
+
+    <!-- Cinnamon: panel-zone-icon-sizes -->
+    <policy name="CinnamonUserDconfOrgCinnamonPanelZoneIconSizes" class="User" displayName="$(string.CinnamonDisplayUserAllDconfOrgCinnamonPanelZoneIconSizes)" explainText="$(string.CinnamonExplainTextUserDconfOrgCinnamonPanelZoneIconSizes)" presentation="$(presentation.CinnamonPresentationUserDconfOrgCinnamonPanelZoneIconSizes)" key="Software\Policies\Ubuntu\dconf\org\cinnamon\panel-zone-icon-sizes" valueName="metaValues">
+      <parentCategory ref="CinnamonPanel" />
+      <supportedOn ref="Ubuntu" />
+      <enabledValue><string>{"20.04":{"empty":"''","meta":"s"},"22.04":{"empty":"''","meta":"s"},"24.04":{"empty":"''","meta":"s"},"all":{"empty":"''","meta":"s"}}</string></enabledValue>
+      <disabledValue><string>{"20.04":{"meta":"s"},"22.04":{"meta":"s"},"24.04":{"meta":"s"},"all":{"meta":"s"}}</string></disabledValue>
+      <elements>
+        <text id="CinnamonElemUserAllDconfOrgCinnamonPanelZoneIconSizes" valueName="all" />
+        <boolean id="CinnamonOverrideElemUser2404DconfOrgCinnamonPanelZoneIconSizes" valueName="Override24.04">
+          <trueValue><string>true</string></trueValue>
+          <falseValue><string>false</string></falseValue>
+        </boolean>
+        <text id="CinnamonElemUser2404DconfOrgCinnamonPanelZoneIconSizes" valueName="24.04" />
+        <boolean id="CinnamonOverrideElemUser2204DconfOrgCinnamonPanelZoneIconSizes" valueName="Override22.04">
+          <trueValue><string>true</string></trueValue>
+          <falseValue><string>false</string></falseValue>
+        </boolean>
+        <text id="CinnamonElemUser2204DconfOrgCinnamonPanelZoneIconSizes" valueName="22.04" />
+        <boolean id="CinnamonOverrideElemUser2004DconfOrgCinnamonPanelZoneIconSizes" valueName="Override20.04">
+          <trueValue><string>true</string></trueValue>
+          <falseValue><string>false</string></falseValue>
+        </boolean>
+        <text id="CinnamonElemUser2004DconfOrgCinnamonPanelZoneIconSizes" valueName="20.04" />
+      </elements>
+    </policy>
+
+    <!-- Cinnamon: panel-enabled-applets -->
+    <policy name="CinnamonUserDconfOrgCinnamonEnabledApplets" class="User" displayName="$(string.CinnamonDisplayUserAllDconfOrgCinnamonEnabledApplets)" explainText="$(string.CinnamonExplainTextUserDconfOrgCinnamonEnabledApplets)" presentation="$(presentation.CinnamonPresentationUserDconfOrgCinnamonEnabledApplets)" key="Software\Policies\Ubuntu\dconf\org\cinnamon\enabled-applets" valueName="metaValues">
+      <parentCategory ref="CinnamonPanel" />
+      <supportedOn ref="Ubuntu" />
+      <enabledValue><string>{"20.04":{"empty":"''","meta":"s"},"22.04":{"empty":"''","meta":"s"},"24.04":{"empty":"''","meta":"s"},"all":{"empty":"''","meta":"s"}}</string></enabledValue>
+      <disabledValue><string>{"20.04":{"meta":"s"},"22.04":{"meta":"s"},"24.04":{"meta":"s"},"all":{"meta":"s"}}</string></disabledValue>
+      <elements>
+        <text id="CinnamonElemUserAllDconfOrgCinnamonEnabledApplets" valueName="all" />
+        <boolean id="CinnamonOverrideElemUser2404DconfOrgCinnamonEnabledApplets" valueName="Override24.04">
+          <trueValue><string>true</string></trueValue>
+          <falseValue><string>false</string></falseValue>
+        </boolean>
+        <text id="CinnamonElemUser2404DconfOrgCinnamonEnabledApplets" valueName="24.04" />
+        <boolean id="CinnamonOverrideElemUser2204DconfOrgCinnamonEnabledApplets" valueName="Override22.04">
+          <trueValue><string>true</string></trueValue>
+          <falseValue><string>false</string></falseValue>
+        </boolean>
+        <text id="CinnamonElemUser2204DconfOrgCinnamonEnabledApplets" valueName="22.04" />
+        <boolean id="CinnamonOverrideElemUser2004DconfOrgCinnamonEnabledApplets" valueName="Override20.04">
+          <trueValue><string>true</string></trueValue>
+          <falseValue><string>false</string></falseValue>
+        </boolean>
+        <text id="CinnamonElemUser2004DconfOrgCinnamonEnabledApplets" valueName="20.04" />
+      </elements>
+    </policy>
+
+    <!-- Cinnamon: automount-open -->
+    <policy name="CinnamonUserDconfOrgCinnamonDesktopMediaHandlingAutomountOpen" class="User" displayName="$(string.CinnamonDisplayUserAllDconfOrgCinnamonDesktopMediaHandlingAutomountOpen)" explainText="$(string.CinnamonExplainTextUserDconfOrgCinnamonDesktopMediaHandlingAutomountOpen)" presentation="$(presentation.CinnamonPresentationUserDconfOrgCinnamonDesktopMediaHandlingAutomountOpen)" key="Software\Policies\Ubuntu\dconf\org\cinnamon\desktop\media-handling\automount-open" valueName="metaValues">
+      <parentCategory ref="CinnamonMedia" />
+      <supportedOn ref="Ubuntu" />
+      <enabledValue><string>{"20.04":{"empty":"false","meta":"b"},"22.04":{"empty":"false","meta":"b"},"24.04":{"empty":"false","meta":"b"},"all":{"empty":"false","meta":"b"}}</string></enabledValue>
+      <disabledValue><string>{"20.04":{"meta":"b"},"22.04":{"meta":"b"},"24.04":{"meta":"b"},"all":{"meta":"b"}}</string></disabledValue>
+      <elements>
+        <boolean id="CinnamonElemUserAllDconfOrgCinnamonDesktopMediaHandlingAutomountOpen" valueName="all">
+          <trueValue><string>true</string></trueValue>
+          <falseValue><string>false</string></falseValue>
+        </boolean>
+        <boolean id="CinnamonOverrideElemUser2404DconfOrgCinnamonDesktopMediaHandlingAutomountOpen" valueName="Override24.04">
+          <trueValue><string>true</string></trueValue>
+          <falseValue><string>false</string></falseValue>
+        </boolean>
+        <boolean id="CinnamonElemUser2404DconfOrgCinnamonDesktopMediaHandlingAutomountOpen" valueName="24.04">
+          <trueValue><string>true</string></trueValue>
+          <falseValue><string>false</string></falseValue>
+        </boolean>
+        <boolean id="CinnamonOverrideElemUser2204DconfOrgCinnamonDesktopMediaHandlingAutomountOpen" valueName="Override22.04">
+          <trueValue><string>true</string></trueValue>
+          <falseValue><string>false</string></falseValue>
+        </boolean>
+        <boolean id="CinnamonElemUser2204DconfOrgCinnamonDesktopMediaHandlingAutomountOpen" valueName="22.04">
+          <trueValue><string>true</string></trueValue>
+          <falseValue><string>false</string></falseValue>
+        </boolean>
+        <boolean id="CinnamonOverrideElemUser2004DconfOrgCinnamonDesktopMediaHandlingAutomountOpen" valueName="Override20.04">
+          <trueValue><string>true</string></trueValue>
+          <falseValue><string>false</string></falseValue>
+        </boolean>
+        <boolean id="CinnamonElemUser2004DconfOrgCinnamonDesktopMediaHandlingAutomountOpen" valueName="20.04">
+          <trueValue><string>true</string></trueValue>
+          <falseValue><string>false</string></falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <!-- Cinnamon: sleep-display-ac -->
+    <policy name="CinnamonUserDconfOrgCinnamonSettingsDaemonPluginsPowerSleepDisplayAc" class="User" displayName="$(string.CinnamonDisplayUserAllDconfOrgCinnamonSettingsDaemonPluginsPowerSleepDisplayAc)" explainText="$(string.CinnamonExplainTextUserDconfOrgCinnamonSettingsDaemonPluginsPowerSleepDisplayAc)" presentation="$(presentation.CinnamonPresentationUserDconfOrgCinnamonSettingsDaemonPluginsPowerSleepDisplayAc)" key="Software\Policies\Ubuntu\dconf\org\cinnamon\settings-daemon\plugins\power\sleep-display-ac" valueName="metaValues">
+      <parentCategory ref="CinnamonPower" />
+      <supportedOn ref="Ubuntu" />
+      <enabledValue><string>{"20.04":{"empty":"0","meta":"i"},"22.04":{"empty":"0","meta":"i"},"24.04":{"empty":"0","meta":"i"},"all":{"empty":"0","meta":"i"}}</string></enabledValue>
+      <disabledValue><string>{"20.04":{"meta":"i"},"22.04":{"meta":"i"},"24.04":{"meta":"i"},"all":{"meta":"i"}}</string></disabledValue>
+      <elements>
+        <decimal id="CinnamonElemUserAllDconfOrgCinnamonSettingsDaemonPluginsPowerSleepDisplayAc" valueName="all" />
+        <boolean id="CinnamonOverrideElemUser2404DconfOrgCinnamonSettingsDaemonPluginsPowerSleepDisplayAc" valueName="Override24.04">
+          <trueValue><string>true</string></trueValue>
+          <falseValue><string>false</string></falseValue>
+        </boolean>
+        <decimal id="CinnamonElemUser2404DconfOrgCinnamonSettingsDaemonPluginsPowerSleepDisplayAc" valueName="24.04" />
+        <boolean id="CinnamonOverrideElemUser2204DconfOrgCinnamonSettingsDaemonPluginsPowerSleepDisplayAc" valueName="Override22.04">
+          <trueValue><string>true</string></trueValue>
+          <falseValue><string>false</string></falseValue>
+        </boolean>
+        <decimal id="CinnamonElemUser2204DconfOrgCinnamonSettingsDaemonPluginsPowerSleepDisplayAc" valueName="22.04" />
+        <boolean id="CinnamonOverrideElemUser2004DconfOrgCinnamonSettingsDaemonPluginsPowerSleepDisplayAc" valueName="Override20.04">
+          <trueValue><string>true</string></trueValue>
+          <falseValue><string>false</string></falseValue>
+        </boolean>
+        <decimal id="CinnamonElemUser2004DconfOrgCinnamonSettingsDaemonPluginsPowerSleepDisplayAc" valueName="20.04" />
+      </elements>
+    </policy>
+
+    <!-- Cinnamon: sleep-inactive-ac-timeout -->
+    <policy name="CinnamonUserDconfOrgCinnamonSettingsDaemonPluginsPowerSleepInactiveAcTimeout" class="User" displayName="$(string.CinnamonDisplayUserAllDconfOrgCinnamonSettingsDaemonPluginsPowerSleepInactiveAcTimeout)" explainText="$(string.CinnamonExplainTextUserDconfOrgCinnamonSettingsDaemonPluginsPowerSleepInactiveAcTimeout)" presentation="$(presentation.CinnamonPresentationUserDconfOrgCinnamonSettingsDaemonPluginsPowerSleepInactiveAcTimeout)" key="Software\Policies\Ubuntu\dconf\org\cinnamon\settings-daemon\plugins\power\sleep-inactive-ac-timeout" valueName="metaValues">
+      <parentCategory ref="CinnamonPower" />
+      <supportedOn ref="Ubuntu" />
+      <enabledValue><string>{"20.04":{"empty":"0","meta":"i"},"22.04":{"empty":"0","meta":"i"},"24.04":{"empty":"0","meta":"i"},"all":{"empty":"0","meta":"i"}}</string></enabledValue>
+      <disabledValue><string>{"20.04":{"meta":"i"},"22.04":{"meta":"i"},"24.04":{"meta":"i"},"all":{"meta":"i"}}</string></disabledValue>
+      <elements>
+        <decimal id="CinnamonElemUserAllDconfOrgCinnamonSettingsDaemonPluginsPowerSleepInactiveAcTimeout" valueName="all" />
+        <boolean id="CinnamonOverrideElemUser2404DconfOrgCinnamonSettingsDaemonPluginsPowerSleepInactiveAcTimeout" valueName="Override24.04">
+          <trueValue><string>true</string></trueValue>
+          <falseValue><string>false</string></falseValue>
+        </boolean>
+        <decimal id="CinnamonElemUser2404DconfOrgCinnamonSettingsDaemonPluginsPowerSleepInactiveAcTimeout" valueName="24.04" />
+        <boolean id="CinnamonOverrideElemUser2204DconfOrgCinnamonSettingsDaemonPluginsPowerSleepInactiveAcTimeout" valueName="Override22.04">
+          <trueValue><string>true</string></trueValue>
+          <falseValue><string>false</string></falseValue>
+        </boolean>
+        <decimal id="CinnamonElemUser2204DconfOrgCinnamonSettingsDaemonPluginsPowerSleepInactiveAcTimeout" valueName="22.04" />
+        <boolean id="CinnamonOverrideElemUser2004DconfOrgCinnamonSettingsDaemonPluginsPowerSleepInactiveAcTimeout" valueName="Override20.04">
+          <trueValue><string>true</string></trueValue>
+          <falseValue><string>false</string></falseValue>
+        </boolean>
+        <decimal id="CinnamonElemUser2004DconfOrgCinnamonSettingsDaemonPluginsPowerSleepInactiveAcTimeout" valueName="20.04" />
+      </elements>
+    </policy>
+  </policies>
+
+</policyDefinitions>

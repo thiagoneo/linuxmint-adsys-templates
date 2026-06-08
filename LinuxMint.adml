@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>Linux Mint policy</displayName>
+  <description>This is the Linux Mint / Cinnamon policy</description>
+  <resources>
+
+    <stringTable>
+      <!-- Cinnamon category names -->
+      <string id="LinuxMintDisplayRoot">Linux Mint</string>
+      <string id="CinnamonDisplayRoot">Cinnamon</string>
+      <string id="CinnamonDisplayDesktop">Desktop</string>
+      <string id="CinnamonDisplayBackground">Background</string>
+      <string id="CinnamonDisplayPanel">Panel</string>
+      <string id="CinnamonDisplaySession">Session</string>
+      <string id="CinnamonDisplayMedia">Media</string>
+      <string id="CinnamonDisplayPower">Power</string>
+      <string id="CinnamonDisplayUserAllDconfOrgCinnamonDesktopBackgroundPictureUri">Picture URI</string>
+      <string id="CinnamonDisplayUser2404DconfOrgCinnamonDesktopBackgroundPictureUri">Picture URI</string>
+      <string id="CinnamonDisplayUser2204DconfOrgCinnamonDesktopBackgroundPictureUri">Picture URI</string>
+      <string id="CinnamonDisplayUser2004DconfOrgCinnamonDesktopBackgroundPictureUri">Picture URI</string>
+      <string id="CinnamonExplainTextUserDconfOrgCinnamonDesktopBackgroundPictureUri">URI to use for the background image. Note that the backend only supports local (file://) URIs.
+
+- Type: dconf
+- Key: /org/cinnamon/desktop/background/picture-uri
+- Default: &#39;file:///usr/share/backgrounds/linuxmint/default_background.jpg&#39;
+
+Note: default system value is used for &#34;Not Configured&#34; and enforced if &#34;Disabled&#34;.
+
+Supported on Linux Mint 20.x, 21.x, 22.x</string>
+      <string id="CinnamonDisplayUserAllDconfOrgCinnamonDesktopBackgroundPictureOptions">Picture Options</string>
+      <string id="CinnamonItemUserAllDconfOrgCinnamonDesktopBackgroundPictureOptions0">none</string>
+      <string id="CinnamonItemUserAllDconfOrgCinnamonDesktopBackgroundPictureOptions1">wallpaper</string>
+      <string id="CinnamonItemUserAllDconfOrgCinnamonDesktopBackgroundPictureOptions2">centered</string>
+      <string id="CinnamonItemUserAllDconfOrgCinnamonDesktopBackgroundPictureOptions3">scaled</string>
+      <string id="CinnamonItemUserAllDconfOrgCinnamonDesktopBackgroundPictureOptions4">stretched</string>
+      <string id="CinnamonItemUserAllDconfOrgCinnamonDesktopBackgroundPictureOptions5">zoom</string>
+      <string id="CinnamonItemUserAllDconfOrgCinnamonDesktopBackgroundPictureOptions6">spanned</string>
+      <string id="CinnamonDisplayUser2404DconfOrgCinnamonDesktopBackgroundPictureOptions">Picture Options</string>
+      <string id="CinnamonItemUser2404DconfOrgCinnamonDesktopBackgroundPictureOptions0">none</string>
+      <string id="CinnamonItemUser2404DconfOrgCinnamonDesktopBackgroundPictureOptions1">wallpaper</string>
+      <string id="CinnamonItemUser2404DconfOrgCinnamonDesktopBackgroundPictureOptions2">centered</string>
+      <string id="CinnamonItemUser2404DconfOrgCinnamonDesktopBackgroundPictureOptions3">scaled</string>
+      <string id="CinnamonItemUser2404DconfOrgCinnamonDesktopBackgroundPictureOptions4">stretched</string>
+      <string id="CinnamonItemUser2404DconfOrgCinnamonDesktopBackgroundPictureOptions5">zoom</string>
+      <string id="CinnamonItemUser2404DconfOrgCinnamonDesktopBackgroundPictureOptions6">spanned</string>
+      <string id="CinnamonDisplayUser2204DconfOrgCinnamonDesktopBackgroundPictureOptions">Picture Options</string>
+      <string id="CinnamonItemUser2204DconfOrgCinnamonDesktopBackgroundPictureOptions0">none</string>
+      <string id="CinnamonItemUser2204DconfOrgCinnamonDesktopBackgroundPictureOptions1">wallpaper</string>
+      <string id="CinnamonItemUser2204DconfOrgCinnamonDesktopBackgroundPictureOptions2">centered</string>
+      <string id="CinnamonItemUser2204DconfOrgCinnamonDesktopBackgroundPictureOptions3">scaled</string>
+      <string id="CinnamonItemUser2204DconfOrgCinnamonDesktopBackgroundPictureOptions4">stretched</string>
+      <string id="CinnamonItemUser2204DconfOrgCinnamonDesktopBackgroundPictureOptions5">zoom</string>
+      <string id="CinnamonItemUser2204DconfOrgCinnamonDesktopBackgroundPictureOptions6">spanned</string>
+      <string id="CinnamonDisplayUser2004DconfOrgCinnamonDesktopBackgroundPictureOptions">Picture Options</string>
+      <string id="CinnamonItemUser2004DconfOrgCinnamonDesktopBackgroundPictureOptions0">none</string>
+      <string id="CinnamonItemUser2004DconfOrgCinnamonDesktopBackgroundPictureOptions1">wallpaper</string>
+      <string id="CinnamonItemUser2004DconfOrgCinnamonDesktopBackgroundPictureOptions2">centered</string>
+      <string id="CinnamonItemUser2004DconfOrgCinnamonDesktopBackgroundPictureOptions3">scaled</string>
+      <string id="CinnamonItemUser2004DconfOrgCinnamonDesktopBackgroundPictureOptions4">stretched</string>
+      <string id="CinnamonItemUser2004DconfOrgCinnamonDesktopBackgroundPictureOptions5">zoom</string>
+      <string id="CinnamonItemUser2004DconfOrgCinnamonDesktopBackgroundPictureOptions6">spanned</string>
+      <string id="CinnamonExplainTextUserDconfOrgCinnamonDesktopBackgroundPictureOptions">Determines how the image set by wallpaper_filename is rendered. Possible values are “none”, “wallpaper”, “centered”, “scaled”, “stretched”, “zoom”, “spanned”.
+
+- Type: dconf
+- Key: /org/cinnamon/desktop/background/picture-options
+- Default: &#39;zoom&#39;
+
+Note: default system value is used for &#34;Not Configured&#34; and enforced if &#34;Disabled&#34;.
+
+Supported on Linux Mint 20.x, 21.x, 22.x</string>
+      <string id="CinnamonDisplayUserAllDconfOrgCinnamonCinnamonSessionQuitDelayToggle">Enable timer when logging out or shutting down</string>
+      <string id="CinnamonDisplayUser2404DconfOrgCinnamonCinnamonSessionQuitDelayToggle">Enable timer when logging out or shutting down</string>
+      <string id="CinnamonDisplayUser2204DconfOrgCinnamonCinnamonSessionQuitDelayToggle">Enable timer when logging out or shutting down</string>
+      <string id="CinnamonDisplayUser2004DconfOrgCinnamonCinnamonSessionQuitDelayToggle">Enable timer when logging out or shutting down</string>
+      <string id="CinnamonExplainTextUserDconfOrgCinnamonCinnamonSessionQuitDelayToggle">Enable timer when logging out or shutting down
+
+- Type: dconf
+- Key: /org/cinnamon/cinnamon-session/quit-delay-toggle
+- Default: true
+
+Note: default system value is used for &#34;Not Configured&#34; and enforced if &#34;Disabled&#34;.
+
+Supported on Linux Mint 20.x, 21.x, 22.x</string>
+      <string id="CinnamonDisplayUserAllDconfOrgCinnamonCinnamonSessionQuitTimeDelay">Time delay when logging out or shutting down (seconds)</string>
+      <string id="CinnamonDisplayUser2404DconfOrgCinnamonCinnamonSessionQuitTimeDelay">Time delay when logging out or shutting down (seconds)</string>
+      <string id="CinnamonDisplayUser2204DconfOrgCinnamonCinnamonSessionQuitTimeDelay">Time delay when logging out or shutting down (seconds)</string>
+      <string id="CinnamonDisplayUser2004DconfOrgCinnamonCinnamonSessionQuitTimeDelay">Time delay when logging out or shutting down (seconds)</string>
+      <string id="CinnamonExplainTextUserDconfOrgCinnamonCinnamonSessionQuitTimeDelay">Time delay when logging out or shutting down (seconds).
+
+- Type: dconf
+- Key: /org/cinnamon/cinnamon-session/quit-time-delay
+- Default: 60
+
+Note: default system value is used for &#34;Not Configured&#34; and enforced if &#34;Disabled&#34;.
+
+Supported on Linux Mint 20.x, 21.x, 22.x</string>
+      <!-- Panel icon sizes -->
+      <string id="CinnamonDisplayUserAllDconfOrgCinnamonPanelZoneIconSizes">Panel Icon Sizes</string>
+      <string id="CinnamonExplainTextUserDconfOrgCinnamonPanelZoneIconSizes">Size of the icons displayed on the Cinnamon panel zones.
+The value must be a JSON string, for example: [{"panelId": 1, "left": 0, "center": 0, "right": 16}]
+Use 0 to inherit the panel height for a zone.
+
+- Type: dconf
+- Key: /org/cinnamon/panel-zone-icon-sizes
+- Default: '[{"panelId": 1, "left": 0, "center": 0, "right": 16}]'
+
+Note: default system value is used for &#34;Not Configured&#34; and enforced if &#34;Disabled&#34;.
+
+Supported on Linux Mint 20.x, 21.x, 22.x</string>
+      <!-- Enabled applets -->
+      <string id="CinnamonDisplayUserAllDconfOrgCinnamonEnabledApplets">Enabled applets</string>
+      <string id="CinnamonExplainTextUserDconfOrgCinnamonEnabledApplets">Default enabled applets on the Cinnamon panel.
+The value must be in the form of a list of strings, for example: ['panel1:left:0:appletX@domain:0', 'panel1:right:2:appletY@domain:1']
+Where each string represents an applet in the format panelName:zone:position:appletId:instanceId.
+
+- Type: dconf
+- Key: /org/cinnamon/enabled-applets
+- Default: &#39;['panel1:left:0:menu@cinnamon.org:0', 'panel1:left:1:separator@cinnamon.org:1', 'panel1:left:2:grouped-window-list@cinnamon.org:2', 'panel1:right:0:user@cinnamon.org:3', 'panel1:right:1:systray@cinnamon.org:4', 'panel1:right:2:xapp-status@cinnamon.org:5', 'panel1:right:3:notifications@cinnamon.org:6', 'panel1:right:4:printers@cinnamon.org:7', 'panel1:right:5:removable-drives@cinnamon.org:8', 'panel1:right:6:keyboard@cinnamon.org:9', 'panel1:right:7:favorites@cinnamon.org:10', 'panel1:right:8:network@cinnamon.org:11', 'panel1:right:9:sound@cinnamon.org:12', 'panel1:right:10:power@cinnamon.org:13', 'panel1:right:11:calendar@cinnamon.org:14', 'panel1:right:12:cornerbar@cinnamon.org:15']&#39;
+
+Note: default system value is used for &#34;Not Configured&#34; and enforced if &#34;Disabled&#34;.
+
+Supported on Linux Mint 20.x, 21.x, 22.x</string>
+      <!-- Auto-open on mount -->
+      <string id="CinnamonDisplayUserAllDconfOrgCinnamonDesktopMediaHandlingAutomountOpen">Auto-open File Manager on Mount</string>
+      <string id="CinnamonExplainTextUserDconfOrgCinnamonDesktopMediaHandlingAutomountOpen">Whether to automatically open a file manager window when a removable storage device is mounted.
+
+- Type: dconf
+- Key: /org/cinnamon/desktop/media-handling/automount-open
+- Default: false
+
+Note: default system value is used for &#34;Not Configured&#34; and enforced if &#34;Disabled&#34;.
+
+Supported on Linux Mint 20.x, 21.x, 22.x</string>
+      <!-- Display idle timeout (AC) -->
+      <string id="CinnamonDisplayUserAllDconfOrgCinnamonSettingsDaemonPluginsPowerSleepDisplayAc">Display Idle Timeout (AC)</string>
+      <string id="CinnamonExplainTextUserDconfOrgCinnamonSettingsDaemonPluginsPowerSleepDisplayAc">Number of seconds of inactivity before the display is turned off when on AC power.
+Set to 0 to never turn off the display automatically.
+
+- Type: dconf
+- Key: /org/cinnamon/settings-daemon/plugins/power/sleep-display-ac
+- Default: 2700
+
+Note: default system value is used for &#34;Not Configured&#34; and enforced if &#34;Disabled&#34;.
+
+Supported on Linux Mint 20.x, 21.x, 22.x</string>
+      <!-- Suspend timeout (AC) -->
+      <string id="CinnamonDisplayUserAllDconfOrgCinnamonSettingsDaemonPluginsPowerSleepInactiveAcTimeout">Suspend Timeout (AC)</string>
+      <string id="CinnamonExplainTextUserDconfOrgCinnamonSettingsDaemonPluginsPowerSleepInactiveAcTimeout">Number of seconds of inactivity before the system suspends when on AC power.
+Set to 0 to disable automatic suspend.
+
+- Type: dconf
+- Key: /org/cinnamon/settings-daemon/plugins/power/sleep-inactive-ac-timeout
+- Default: 0
+
+Note: default system value is used for &#34;Not Configured&#34; and enforced if &#34;Disabled&#34;.
+
+Supported on Linux Mint 20.x, 21.x, 22.x</string>
+
+    </stringTable>
+
+    <presentationTable>
+      <presentation id="CinnamonPresentationUserDconfOrgCinnamonDesktopBackgroundPictureUri">
+        <textBox refId="CinnamonElemUserAllDconfOrgCinnamonDesktopBackgroundPictureUri">
+          <label>Picture URI</label>
+          <defaultValue>'file:///usr/share/backgrounds/linuxmint/default_background.jpg'</defaultValue>
+        </textBox>
+        <text/>
+        <checkBox refId="CinnamonOverrideElemUser2404DconfOrgCinnamonDesktopBackgroundPictureUri" defaultChecked="false">Override value for 22.x:</checkBox>
+        <textBox refId="CinnamonElemUser2404DconfOrgCinnamonDesktopBackgroundPictureUri">
+          <label></label>
+          <defaultValue>'file:///usr/share/backgrounds/linuxmint/default_background.jpg'</defaultValue>
+        </textBox>
+        <text/>
+        <checkBox refId="CinnamonOverrideElemUser2204DconfOrgCinnamonDesktopBackgroundPictureUri" defaultChecked="false">Override value for 21.x:</checkBox>
+        <textBox refId="CinnamonElemUser2204DconfOrgCinnamonDesktopBackgroundPictureUri">
+          <label></label>
+          <defaultValue>'file:///usr/share/backgrounds/linuxmint/default_background.jpg'</defaultValue>
+        </textBox>
+        <text/>
+        <checkBox refId="CinnamonOverrideElemUser2004DconfOrgCinnamonDesktopBackgroundPictureUri" defaultChecked="false">Override value for 20.x:</checkBox>
+        <textBox refId="CinnamonElemUser2004DconfOrgCinnamonDesktopBackgroundPictureUri">
+          <label></label>
+          <defaultValue>'file:///usr/share/backgrounds/linuxmint/default_background.jpg'</defaultValue>
+        </textBox>
+      </presentation>
+
+      <presentation id="CinnamonPresentationUserDconfOrgCinnamonDesktopBackgroundPictureOptions">
+        <dropdownList refId="CinnamonElemUserAllDconfOrgCinnamonDesktopBackgroundPictureOptions" noSort="true" defaultItem="5">Picture Options</dropdownList>
+        <text/>
+        <checkBox refId="CinnamonOverrideElemUser2404DconfOrgCinnamonDesktopBackgroundPictureOptions" defaultChecked="false">Override value for 22.x:</checkBox>
+        <dropdownList refId="CinnamonElemUser2404DconfOrgCinnamonDesktopBackgroundPictureOptions" noSort="true" defaultItem="5"></dropdownList>
+        <text/>
+        <checkBox refId="CinnamonOverrideElemUser2204DconfOrgCinnamonDesktopBackgroundPictureOptions" defaultChecked="false">Override value for 21.x:</checkBox>
+        <dropdownList refId="CinnamonElemUser2204DconfOrgCinnamonDesktopBackgroundPictureOptions" noSort="true" defaultItem="5"></dropdownList>
+        <text/>
+        <checkBox refId="CinnamonOverrideElemUser2004DconfOrgCinnamonDesktopBackgroundPictureOptions" defaultChecked="false">Override value for 20.x:</checkBox>
+        <dropdownList refId="CinnamonElemUser2004DconfOrgCinnamonDesktopBackgroundPictureOptions" noSort="true" defaultItem="5"></dropdownList>
+      </presentation>
+
+      <presentation id="CinnamonPresentationUserDconfOrgCinnamonCinnamonSessionQuitDelayToggle">
+        <checkBox refId="CinnamonElemUserAllDconfOrgCinnamonCinnamonSessionQuitDelayToggle" defaultChecked="true">Enable timer when logging out or shutting down</checkBox>
+        <text/>
+        <checkBox refId="CinnamonOverrideElemUser2404DconfOrgCinnamonCinnamonSessionQuitDelayToggle" defaultChecked="false">Override value for 22.x:</checkBox>
+        <checkBox refId="CinnamonElemUser2404DconfOrgCinnamonCinnamonSessionQuitDelayToggle" defaultChecked="true">Enable timer when logging out or shutting down</checkBox>
+        <text/>
+        <checkBox refId="CinnamonOverrideElemUser2204DconfOrgCinnamonCinnamonSessionQuitDelayToggle" defaultChecked="false">Override value for 21.x:</checkBox>
+        <checkBox refId="CinnamonElemUser2204DconfOrgCinnamonCinnamonSessionQuitDelayToggle" defaultChecked="true">Enable timer when logging out or shutting down</checkBox>
+        <text/>
+        <checkBox refId="CinnamonOverrideElemUser2004DconfOrgCinnamonCinnamonSessionQuitDelayToggle" defaultChecked="false">Override value for 20.x:</checkBox>
+        <checkBox refId="CinnamonElemUser2004DconfOrgCinnamonCinnamonSessionQuitDelayToggle" defaultChecked="true">Enable timer when logging out or shutting down</checkBox>
+      </presentation>
+
+      <presentation id="CinnamonPresentationUserDconfOrgCinnamonCinnamonSessionQuitTimeDelay">
+        <decimalTextBox refId="CinnamonElemUserAllDconfOrgCinnamonCinnamonSessionQuitTimeDelay" defaultValue="60">Time delay when logging out or shutting down (seconds)</decimalTextBox>
+        <text/>
+        <checkBox refId="CinnamonOverrideElemUser2404DconfOrgCinnamonCinnamonSessionQuitTimeDelay" defaultChecked="false">Override value for 22.x:</checkBox>
+        <decimalTextBox refId="CinnamonElemUser2404DconfOrgCinnamonCinnamonSessionQuitTimeDelay" defaultValue="60">Time delay when logging out or shutting down (seconds)</decimalTextBox>
+        <text/>
+        <checkBox refId="CinnamonOverrideElemUser2204DconfOrgCinnamonCinnamonSessionQuitTimeDelay" defaultChecked="false">Override value for 21.x:</checkBox>
+        <decimalTextBox refId="CinnamonElemUser2204DconfOrgCinnamonCinnamonSessionQuitTimeDelay" defaultValue="60">Time delay when logging out or shutting down (seconds)</decimalTextBox>
+        <text/>
+        <checkBox refId="CinnamonOverrideElemUser2004DconfOrgCinnamonCinnamonSessionQuitTimeDelay" defaultChecked="false">Override value for 20.x:</checkBox>
+        <decimalTextBox refId="CinnamonElemUser2004DconfOrgCinnamonCinnamonSessionQuitTimeDelay" defaultValue="60">Time delay when logging out or shutting down (seconds)</decimalTextBox>
+      </presentation>
+
+      <presentation id="CinnamonPresentationUserDconfOrgCinnamonPanelZoneIconSizes">
+        <textBox refId="CinnamonElemUserAllDconfOrgCinnamonPanelZoneIconSizes">
+          <label>Panel icon sizes (JSON)</label>
+          <defaultValue>[{"panelId": 1, "left": 0, "center": 0, "right": 16}]</defaultValue>
+        </textBox>
+        <text/>
+        <checkBox refId="CinnamonOverrideElemUser2404DconfOrgCinnamonPanelZoneIconSizes" defaultChecked="false">Override value for 22.x:</checkBox>
+        <textBox refId="CinnamonElemUser2404DconfOrgCinnamonPanelZoneIconSizes">
+          <label>Panel icon sizes (JSON)</label>
+          <defaultValue>[{"panelId": 1, "left": 0, "center": 0, "right": 16}]</defaultValue>
+        </textBox>
+        <text/>
+        <checkBox refId="CinnamonOverrideElemUser2204DconfOrgCinnamonPanelZoneIconSizes" defaultChecked="false">Override value for 21.x:</checkBox>
+        <textBox refId="CinnamonElemUser2204DconfOrgCinnamonPanelZoneIconSizes">
+          <label>Panel icon sizes (JSON)</label>
+          <defaultValue>[{"panelId": 1, "left": 0, "center": 0, "right": 16}]</defaultValue>
+        </textBox>
+        <text/>
+        <checkBox refId="CinnamonOverrideElemUser2004DconfOrgCinnamonPanelZoneIconSizes" defaultChecked="false">Override value for 20.x:</checkBox>
+        <textBox refId="CinnamonElemUser2004DconfOrgCinnamonPanelZoneIconSizes">
+          <label>Panel icon sizes (JSON)</label>
+          <defaultValue>[{"panelId": 1, "left": 0, "center": 0, "right": 16}]</defaultValue>
+        </textBox>
+      </presentation>
+
+      <presentation id="CinnamonPresentationUserDconfOrgCinnamonEnabledApplets">
+        <textBox refId="CinnamonElemUserAllDconfOrgCinnamonEnabledApplets">
+          <label>Enabled applets</label>
+          <defaultValue>['panel1:left:0:menu@cinnamon.org:0', 'panel1:left:1:separator@cinnamon.org:1', 'panel1:left:2:grouped-window-list@cinnamon.org:2', 'panel1:right:0:user@cinnamon.org:3', 'panel1:right:1:systray@cinnamon.org:4', 'panel1:right:2:xapp-status@cinnamon.org:5', 'panel1:right:3:notifications@cinnamon.org:6', 'panel1:right:4:printers@cinnamon.org:7', 'panel1:right:5:removable-drives@cinnamon.org:8', 'panel1:right:6:keyboard@cinnamon.org:9', 'panel1:right:7:favorites@cinnamon.org:10', 'panel1:right:8:network@cinnamon.org:11', 'panel1:right:9:sound@cinnamon.org:12', 'panel1:right:10:power@cinnamon.org:13', 'panel1:right:11:calendar@cinnamon.org:14', 'panel1:right:12:cornerbar@cinnamon.org:15']</defaultValue>
+        </textBox>
+        <text/>
+        <checkBox refId="CinnamonOverrideElemUser2404DconfOrgCinnamonEnabledApplets" defaultChecked="false">Override value for 22.x:</checkBox>
+        <textBox refId="CinnamonElemUser2404DconfOrgCinnamonEnabledApplets">
+          <label>Enabled applets</label>
+          <defaultValue>['panel1:left:0:menu@cinnamon.org:0', 'panel1:left:1:separator@cinnamon.org:1', 'panel1:left:2:grouped-window-list@cinnamon.org:2', 'panel1:right:0:user@cinnamon.org:3', 'panel1:right:1:systray@cinnamon.org:4', 'panel1:right:2:xapp-status@cinnamon.org:5', 'panel1:right:3:notifications@cinnamon.org:6', 'panel1:right:4:printers@cinnamon.org:7', 'panel1:right:5:removable-drives@cinnamon.org:8', 'panel1:right:6:keyboard@cinnamon.org:9', 'panel1:right:7:favorites@cinnamon.org:10', 'panel1:right:8:network@cinnamon.org:11', 'panel1:right:9:sound@cinnamon.org:12', 'panel1:right:10:power@cinnamon.org:13', 'panel1:right:11:calendar@cinnamon.org:14', 'panel1:right:12:cornerbar@cinnamon.org:15']</defaultValue>
+        </textBox>
+        <text/>
+        <checkBox refId="CinnamonOverrideElemUser2204DconfOrgCinnamonEnabledApplets" defaultChecked="false">Override value for 21.x:</checkBox>
+        <textBox refId="CinnamonElemUser2204DconfOrgCinnamonEnabledApplets">
+          <label>Enabled applets</label>
+          <defaultValue>['panel1:left:0:menu@cinnamon.org:0', 'panel1:left:1:separator@cinnamon.org:1', 'panel1:left:2:grouped-window-list@cinnamon.org:2', 'panel1:right:0:user@cinnamon.org:3', 'panel1:right:1:systray@cinnamon.org:4', 'panel1:right:2:xapp-status@cinnamon.org:5', 'panel1:right:3:notifications@cinnamon.org:6', 'panel1:right:4:printers@cinnamon.org:7', 'panel1:right:5:removable-drives@cinnamon.org:8', 'panel1:right:6:keyboard@cinnamon.org:9', 'panel1:right:7:favorites@cinnamon.org:10', 'panel1:right:8:network@cinnamon.org:11', 'panel1:right:9:sound@cinnamon.org:12', 'panel1:right:10:power@cinnamon.org:13', 'panel1:right:11:calendar@cinnamon.org:14', 'panel1:right:12:cornerbar@cinnamon.org:15']</defaultValue>
+        </textBox>
+        <text/>
+        <checkBox refId="CinnamonOverrideElemUser2004DconfOrgCinnamonEnabledApplets" defaultChecked="false">Override value for 20.x:</checkBox>
+        <textBox refId="CinnamonElemUser2004DconfOrgCinnamonEnabledApplets">
+          <label>Enabled applets</label>
+          <defaultValue>['panel1:left:0:menu@cinnamon.org:0', 'panel1:left:1:separator@cinnamon.org:1', 'panel1:left:2:grouped-window-list@cinnamon.org:2', 'panel1:right:0:user@cinnamon.org:3', 'panel1:right:1:systray@cinnamon.org:4', 'panel1:right:2:xapp-status@cinnamon.org:5', 'panel1:right:3:notifications@cinnamon.org:6', 'panel1:right:4:printers@cinnamon.org:7', 'panel1:right:5:removable-drives@cinnamon.org:8', 'panel1:right:6:keyboard@cinnamon.org:9', 'panel1:right:7:favorites@cinnamon.org:10', 'panel1:right:8:network@cinnamon.org:11', 'panel1:right:9:sound@cinnamon.org:12', 'panel1:right:10:power@cinnamon.org:13', 'panel1:right:11:calendar@cinnamon.org:14', 'panel1:right:12:cornerbar@cinnamon.org:15']</defaultValue>
+        </textBox>
+      </presentation>
+
+      <presentation id="CinnamonPresentationUserDconfOrgCinnamonDesktopMediaHandlingAutomountOpen">
+        <checkBox refId="CinnamonElemUserAllDconfOrgCinnamonDesktopMediaHandlingAutomountOpen" defaultChecked="false">Auto-open file manager when device is mounted</checkBox>
+        <text/>
+        <checkBox refId="CinnamonOverrideElemUser2404DconfOrgCinnamonDesktopMediaHandlingAutomountOpen" defaultChecked="false">Override value for 22.x:</checkBox>
+        <checkBox refId="CinnamonElemUser2404DconfOrgCinnamonDesktopMediaHandlingAutomountOpen" defaultChecked="false">Auto-open file manager when device is mounted</checkBox>
+        <text/>
+        <checkBox refId="CinnamonOverrideElemUser2204DconfOrgCinnamonDesktopMediaHandlingAutomountOpen" defaultChecked="false">Override value for 21.x:</checkBox>
+        <checkBox refId="CinnamonElemUser2204DconfOrgCinnamonDesktopMediaHandlingAutomountOpen" defaultChecked="false">Auto-open file manager when device is mounted</checkBox>
+        <text/>
+        <checkBox refId="CinnamonOverrideElemUser2004DconfOrgCinnamonDesktopMediaHandlingAutomountOpen" defaultChecked="false">Override value for 20.x:</checkBox>
+        <checkBox refId="CinnamonElemUser2004DconfOrgCinnamonDesktopMediaHandlingAutomountOpen" defaultChecked="false">Auto-open file manager when device is mounted</checkBox>
+      </presentation>
+
+      <presentation id="CinnamonPresentationUserDconfOrgCinnamonSettingsDaemonPluginsPowerSleepDisplayAc">
+        <decimalTextBox refId="CinnamonElemUserAllDconfOrgCinnamonSettingsDaemonPluginsPowerSleepDisplayAc" defaultValue="2700">Display idle timeout in seconds (0 = never)</decimalTextBox>
+        <text/>
+        <checkBox refId="CinnamonOverrideElemUser2404DconfOrgCinnamonSettingsDaemonPluginsPowerSleepDisplayAc" defaultChecked="false">Override value for 22.x:</checkBox>
+        <decimalTextBox refId="CinnamonElemUser2404DconfOrgCinnamonSettingsDaemonPluginsPowerSleepDisplayAc" defaultValue="2700">Display idle timeout in seconds (0 = never)</decimalTextBox>
+        <text/>
+        <checkBox refId="CinnamonOverrideElemUser2204DconfOrgCinnamonSettingsDaemonPluginsPowerSleepDisplayAc" defaultChecked="false">Override value for 21.x:</checkBox>
+        <decimalTextBox refId="CinnamonElemUser2204DconfOrgCinnamonSettingsDaemonPluginsPowerSleepDisplayAc" defaultValue="2700">Display idle timeout in seconds (0 = never)</decimalTextBox>
+        <text/>
+        <checkBox refId="CinnamonOverrideElemUser2004DconfOrgCinnamonSettingsDaemonPluginsPowerSleepDisplayAc" defaultChecked="false">Override value for 20.x:</checkBox>
+        <decimalTextBox refId="CinnamonElemUser2004DconfOrgCinnamonSettingsDaemonPluginsPowerSleepDisplayAc" defaultValue="2700">Display idle timeout in seconds (0 = never)</decimalTextBox>
+      </presentation>
+
+      <presentation id="CinnamonPresentationUserDconfOrgCinnamonSettingsDaemonPluginsPowerSleepInactiveAcTimeout">
+        <decimalTextBox refId="CinnamonElemUserAllDconfOrgCinnamonSettingsDaemonPluginsPowerSleepInactiveAcTimeout" defaultValue="0">Auto-suspend timeout in seconds (0 = disabled)</decimalTextBox>
+        <text/>
+        <checkBox refId="CinnamonOverrideElemUser2404DconfOrgCinnamonSettingsDaemonPluginsPowerSleepInactiveAcTimeout" defaultChecked="false">Override value for 22.x:</checkBox>
+        <decimalTextBox refId="CinnamonElemUser2404DconfOrgCinnamonSettingsDaemonPluginsPowerSleepInactiveAcTimeout" defaultValue="0">Auto-suspend timeout in seconds (0 = disabled)</decimalTextBox>
+        <text/>
+        <checkBox refId="CinnamonOverrideElemUser2204DconfOrgCinnamonSettingsDaemonPluginsPowerSleepInactiveAcTimeout" defaultChecked="false">Override value for 21.x:</checkBox>
+        <decimalTextBox refId="CinnamonElemUser2204DconfOrgCinnamonSettingsDaemonPluginsPowerSleepInactiveAcTimeout" defaultValue="0">Auto-suspend timeout in seconds (0 = disabled)</decimalTextBox>
+        <text/>
+        <checkBox refId="CinnamonOverrideElemUser2004DconfOrgCinnamonSettingsDaemonPluginsPowerSleepInactiveAcTimeout" defaultChecked="false">Override value for 20.x:</checkBox>
+        <decimalTextBox refId="CinnamonElemUser2004DconfOrgCinnamonSettingsDaemonPluginsPowerSleepInactiveAcTimeout" defaultValue="0">Auto-suspend timeout in seconds (0 = disabled)</decimalTextBox>
+      </presentation>
+    </presentationTable>
+
+  </resources>
+</policyDefinitionResources>
