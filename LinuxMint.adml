@@ -110,30 +110,15 @@ Supported on Linux Mint 20.x, 21.x, 22.x</string>
       <!-- Enabled applets -->
       <string id="CinnamonDisplayUserAllDconfOrgCinnamonEnabledApplets">Enabled applets</string>
       <string id="CinnamonExplainTextUserDconfOrgCinnamonEnabledApplets">Default enabled applets on the Cinnamon panel.
-The value must be in the form of a list of strings, one string per line, for example: 
+Enter one applet per line, without brackets or quotes, in the format:
+panelName:zone:position:appletId:instanceId
 
+Example:
 panel1:left:0:menu@cinnamon.org:0
-panel1:left:1:separator@cinnamon.org:1
-panel1:left:2:grouped-window-list@cinnamon.org:2
 panel1:right:0:user@cinnamon.org:3
-panel1:right:1:systray@cinnamon.org:4
-panel1:right:2:xapp-status@cinnamon.org:5
-panel1:right:3:notifications@cinnamon.org:6
-panel1:right:4:printers@cinnamon.org:7
-panel1:right:5:removable-drives@cinnamon.org:8
-panel1:right:6:keyboard@cinnamon.org:9
-panel1:right:7:favorites@cinnamon.org:10
-panel1:right:8:network@cinnamon.org:11
-panel1:right:9:sound@cinnamon.org:12
-panel1:right:10:power@cinnamon.org:13
-panel1:right:11:calendar@cinnamon.org:14
-panel1:right:12:cornerbar@cinnamon.org:15
 
-Where each string represents an applet in the format panelName:zone:position:appletId:instanceId.
-
-- Type: dconf
+- Type: dconf (as)
 - Key: /org/cinnamon/enabled-applets
-- Default: &#39;['panel1:left:0:menu@cinnamon.org:0', 'panel1:left:1:separator@cinnamon.org:1', 'panel1:left:2:grouped-window-list@cinnamon.org:2', 'panel1:right:0:user@cinnamon.org:3', 'panel1:right:1:systray@cinnamon.org:4', 'panel1:right:2:xapp-status@cinnamon.org:5', 'panel1:right:3:notifications@cinnamon.org:6', 'panel1:right:4:printers@cinnamon.org:7', 'panel1:right:5:removable-drives@cinnamon.org:8', 'panel1:right:6:keyboard@cinnamon.org:9', 'panel1:right:7:favorites@cinnamon.org:10', 'panel1:right:8:network@cinnamon.org:11', 'panel1:right:9:sound@cinnamon.org:12', 'panel1:right:10:power@cinnamon.org:13', 'panel1:right:11:calendar@cinnamon.org:14', 'panel1:right:12:cornerbar@cinnamon.org:15']&#39;
 
 Note: default system value is used for &#34;Not Configured&#34; and enforced if &#34;Disabled&#34;.
 
@@ -267,24 +252,16 @@ Supported on Linux Mint 20.x, 21.x, 22.x</string>
       </presentation>
 
       <presentation id="CinnamonPresentationUserDconfOrgCinnamonEnabledApplets">
-        <multiTextBox refId="CinnamonElemUserAllDconfOrgCinnamonEnabledApplets">
-          <label>Enabled applets</label>
-        </multiTextBox>
+        <multiTextBox refId="CinnamonElemUserAllDconfOrgCinnamonEnabledApplets" />
         <text/>
         <checkBox refId="CinnamonOverrideElemUser2404DconfOrgCinnamonEnabledApplets" defaultChecked="false">Override value for 22.x:</checkBox>
-        <multiTextBox refId="CinnamonElemUser2404DconfOrgCinnamonEnabledApplets">
-          <label>Enabled applets</label>
-        </multiTextBox>
+        <multiTextBox refId="CinnamonElemUser2404DconfOrgCinnamonEnabledApplets" />
         <text/>
         <checkBox refId="CinnamonOverrideElemUser2204DconfOrgCinnamonEnabledApplets" defaultChecked="false">Override value for 21.x:</checkBox>
-        <multiTextBox refId="CinnamonElemUser2204DconfOrgCinnamonEnabledApplets">
-          <label>Enabled applets</label>
-        </multiTextBox>
+        <multiTextBox refId="CinnamonElemUser2204DconfOrgCinnamonEnabledApplets" />
         <text/>
         <checkBox refId="CinnamonOverrideElemUser2004DconfOrgCinnamonEnabledApplets" defaultChecked="false">Override value for 20.x:</checkBox>
-        <multiTextBox refId="CinnamonElemUser2004DconfOrgCinnamonEnabledApplets">
-          <label>Enabled applets</label>
-        </multiTextBox>
+        <multiTextBox refId="CinnamonElemUser2004DconfOrgCinnamonEnabledApplets" />
       </presentation>
 
       <presentation id="CinnamonPresentationUserDconfOrgCinnamonDesktopMediaHandlingAutomountOpen">
